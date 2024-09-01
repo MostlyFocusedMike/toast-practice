@@ -33,7 +33,7 @@
   95% { opacity: 1; transform: translateX(0); }
   100% { opacity: 0; transform: translateX(100%); }
 }
-
+/* Basic Styles */
 ul, ol {
   padding: 0;
   list-style: none;

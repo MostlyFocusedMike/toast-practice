@@ -1,4 +1,4 @@
-import Toasts from './Toasts';
+import ToastList from './ToastList';
 import Buttons from './Buttons';
 import './App.css';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <main>
       <h1>Toast Practice</h1>
-      <Toasts />
+      <ToastList />
       <Buttons />
     </main>
   )

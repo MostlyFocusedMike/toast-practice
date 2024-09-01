@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import ToastContext from './context/ToastContext';
+import ToastContext from './ToastContext';
 import Toast from './Toast';
 
-export default function Toasts() {
+export default function ToastList() {
   const { toasts } = useContext(ToastContext);
 
   return <ul className="toast-container">

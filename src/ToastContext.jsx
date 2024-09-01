@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import ToastContext from './ToastContext';
-import { DEFAULT } from '../constants';
+import { createContext } from 'react';
+import { DEFAULT } from './constants';
 
-export default function ToastContextProvider({ children }) {
+const ToastContext = createContext();
+
+export const ToastContextProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);
 
   const addToast = (msg, opts = {}) => {
@@ -30,3 +32,5 @@ export default function ToastContextProvider({ children }) {
     </ToastContext.Provider>
   );
 }
+
+export default ToastContext;
